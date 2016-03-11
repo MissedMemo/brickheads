@@ -202,8 +202,21 @@ iframe {
       Company Details View
 *********************************/
 
-.company-details-panel {
-  padding-top: 32px;
+.company-details-header {
+  padding: 20px 0 10px 0;
   text-align: center;
-  background-color: lightgreen;
+}
+
+.company-details-header .company-name {
+  margin: 0 8px;
+  font-weight: bold;
+}
+
+.stages-bar {
+  height: 20px;
+  width: 95%;
+  background: linear-gradient( 90deg, white, green );;
+  border: 1px solid gray;
+  border-radius: 3px;
+  margin-top: 16px;
 }

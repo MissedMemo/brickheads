@@ -12,15 +12,7 @@ app.config( function( $stateProvider, $urlRouterProvider ) {
     })
 
     // nested COMPANIES view
-
-    .state('companies', {
-      url: '/companies',
-      templateUrl: '../views/companies.html',
-      controller: 'CompaniesController'
-    });
     
-    /*
-
     .state('companies', {
       url: '/companies',
       views: {
@@ -29,12 +21,11 @@ app.config( function( $stateProvider, $urlRouterProvider ) {
           controller: 'CompaniesController'
         },
         'company-details@companies': {
-          templateUrl: '../views/company.html',
-          controller: 'CompaniesController'
+          templateUrl: '../views/company.html'
         }
       }   
     });
-    */
+    
 
     /*
     //declare COMPANIES page state with static templates navbar & companylist    
