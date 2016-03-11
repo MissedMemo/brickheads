@@ -17,11 +17,8 @@
     <div class="menu-bar">
       <span class="branding">Job Hunt</span>
       <div ng-controller="LoginController" class="log-in-out">
-        <a ng-click="login()" ng-show="!isLoggedIn" ui-sref="companies">
-          login
-        </a>
-        <a ng-click="logout()" ng-show="isLoggedIn" ui-sref="home">
-          logout
+        <a ng-click="logInOrOut()">
+          {{ isLoggedIn ? 'logout' : 'login' }}
         </a>
       </div>
     </div>

@@ -27,6 +27,7 @@ html {
   float: right;
   font-size: 3vh;
   letter-spacing: 0.25vw;
+  cursor: pointer;
 }
 
 .log-in-out a {

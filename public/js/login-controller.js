@@ -1,16 +1,11 @@
 angular.module('app')
-  .controller( 'LoginController', [ '$scope', function( $scope ) {
+  .controller( 'LoginController', [ '$scope', '$state', function( $scope, $state ) {
 
     $scope.isLoggedIn = false;
 
-    $scope.login = function() {
-      $scope.isLoggedIn = true;
-    };
-
-    $scope.logout = function() {
-      $scope.isLoggedIn = false;
+    $scope.logInOrOut = function() {
+      $scope.isLoggedIn = !$scope.isLoggedIn;
+      $state.go( $scope.isLoggedIn ? 'companies' : 'home' );
     };
 
   }]);
-
-  //ng-show="showMe"
