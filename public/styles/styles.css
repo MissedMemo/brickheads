@@ -165,7 +165,7 @@ iframe {
   left: 0;
   right: 0;
   bottom: 0;
-  padding-top: 8px;
+  padding: 20px;
   background-color: lightgray;
 }
 
@@ -177,24 +177,24 @@ iframe {
 }
 
 .company-selector-panel li {
-  padding: 3px 8px;
+  margin-top: 6px;
 }
 
-/* highlight list element on mouse-over or click */
-.company-selector-panel li:hover {
-  background-color: rgba(0,0,255,0.4);
-}
-.company-selector-panel li:focus {
-  background-color: rgba(0,0,255,0.6);
-}
-
-.companylist-element {
-  background-color: rgba(255,255,255, 0.65);
-  color: rgba(0,0,255,0.5);
+.list-element {
+  display: block;
+  background-color: rgba(0,0,255,0.25);
+  color: rgba(0,0,255,0.65);
   text-align: center;
   padding: 5px 0;
   border-radius: 2px;
   cursor: default;
+}
+
+/* highlight list element on mouse-over or click */
+.list-element:hover, .list-element:focus {
+  background-color: rgba(0,0,255,0.6);
+  color: white;
+  text-decoration: none;
 }
 
 
