@@ -1,19 +1,6 @@
 angular.module('app')
-  .controller( 'CompaniesController', [ '$scope', function( $scope ) {
+  .controller( 'CompaniesController', [ '$scope', 'CompanyFactory', function( $scope, CompanyFactory ) {
 
-    $scope.companies = [
-      {
-        name: 'company A'
-      },
-      {
-        name: 'company B'
-      },
-      {
-        name: 'company C'
-      },
-      {
-        name: 'company D'
-      }
-    ];
+    $scope.companies = CompanyFactory.getAll();
 
   }]);
