@@ -203,5 +203,6 @@ iframe {
 *********************************/
 
 .company-details-panel {
-  background-color: lightblue;
+  padding-top: 32px;
+  text-align: center;
 }
