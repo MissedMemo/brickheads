@@ -16,9 +16,13 @@
     <!-- menu bar on EVERY page (maybe replace wi. Bootstrap navbar) -->
     <div class="menu-bar">
       <span class="branding">Job Hunt</span>
-      <div class="log-in-out">
-        <a class="login" ui-sref="companies">login</a>
-        <a class="logout" ui-sref="home">logout</a>
+      <div ng-controller="LoginController" class="log-in-out">
+        <a ng-click="login()" ng-show="!isLoggedIn" ui-sref="companies">
+          login
+        </a>
+        <a ng-click="logout()" ng-show="isLoggedIn" ui-sref="home">
+          logout
+        </a>
       </div>
     </div>
 
@@ -29,6 +33,7 @@
     <!-- standard trick: scripts before closing 'body' tag ensures
       page elements have all loaded before referencing in code -->
     <script src="js/app.js"></script>
+    <script src="js/login-controller.js"></script>
     <script src="js/company-factory.js"></script>
     <script src="js/companies-controller.js"></script>
   
