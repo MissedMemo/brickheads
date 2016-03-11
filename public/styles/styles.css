@@ -1,11 +1,16 @@
 /********************************
-  Shared Elements (in all views)
+      Top-Level Elements
 *********************************/
 
 html {
   font-family: sans-serif;
   overflow-x: hidden; /* prevents horiz scrollbar when using vh for full-screen image */
 }
+
+
+/********************************
+           Menu Bar
+*********************************/
 
 .menu-bar {
   height: 10vh;
@@ -45,7 +50,7 @@ html {
 
 
 /********************************
-     Landing Page Elements
+        Splash Screen
 *********************************/
 
 .image-area {
@@ -105,6 +110,11 @@ html {
   margin: 10px 0;
 }
 
+
+/********************************
+    Other Home Page Elements
+*********************************/
+
 .promo-strip {
   min-height: 360px;
   margin-top: 60px;
@@ -139,15 +149,38 @@ iframe {
 
 
 /********************************
-  Individual Company Styles
+      Company List View
 *********************************/
 
 .company-selector-panel {
-  width: 200px;
-  background-color: lightgreen;
+  min-height: 90vh;
+  padding: 8px;
+  border-right: 1px solid;
 }
 
+/* remove default <ul> list styles */
+.company-selector-panel ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.company-selector-panel li {
+  margin-top: 5px;
+}
+
+.companylist-element {
+  background-color: lightblue;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 2px;
+}
+
+
+/********************************
+      Company Details View
+*********************************/
+
 .company-details-panel {
-  width: 400px;
-  background-color: lightgreen;
+  background-color: lightblue;
 }
