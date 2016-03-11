@@ -166,7 +166,7 @@ iframe {
   right: 0;
   bottom: 0;
   padding: 20px;
-  background-color: lightgray;
+  background-color: rgba(0,0,0,0.1);
 }
 
 /* remove default <ul> list styles */
@@ -203,7 +203,7 @@ iframe {
 *********************************/
 
 .company-details-header {
-  padding: 20px 0 10px 0;
+  padding: 20px 0;
   text-align: center;
 }
 
@@ -219,4 +219,83 @@ iframe {
   border: 1px solid gray;
   border-radius: 3px;
   margin-top: 16px;
+}
+
+/********************************
+      Task Panel Area
+*********************************/
+
+.taskpanel {
+  margin-right: 12px;
+  border: 1px solid gray;
+  border-radius: 3px;
+}
+
+.taskbar {
+  background-color: lightgray;
+}
+
+.buttonframe {
+  padding: 5px;
+  float: left;
+}
+
+/* show button 'selected' on mouse-over or click */
+.buttonframe:hover {
+  background-color: rgba(0,0,255,0.4);
+  text-decoration: none;
+}
+.buttonframe:focus {
+  background-color: rgba(0,0,255,0.6);
+  text-decoration: none;
+}
+
+.taskbutton {
+  background-color: rgba(255,255,255, 0.65);
+  color: rgba(0,0,255,0.5);
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 48px;
+}
+
+.taskbutton .caption {
+  color: rgba(0,0,255,0.6);
+  font-size: 14px;
+  transform: translate( 0%,10%);
+}
+
+.task-edit-area {
+  position: relative;
+}
+
+.task-edit-area header {
+  text-align: center;
+  font-size: 18px;
+}
+
+.task-edit-area header > .title {
+  margin-top: 20px;
+  text-transform: uppercase;
+  min-height: 800px;
+}
+
+.taskdoc-link {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  text-decoration: underline;
+}
+
+.taskdoc-container {
+  position: absolute;
+  overflow-x: scroll;
+  top: 40px;
+  width: 100%;
+}
+
+.task-edit-area iframe {
+  height: 1000px;
+  width: 100%;
 }

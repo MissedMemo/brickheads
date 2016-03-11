@@ -24,29 +24,6 @@ app.config( function( $stateProvider, $urlRouterProvider ) {
           templateUrl: '../views/company.html'
         }
       }   
-    });
-    
-
-    /*
-    //declare COMPANIES page state with static templates navbar & companylist    
-    .state('companies', {
-      url: '/companies',
-      views: {
-        '': { 
-          templateUrl: '../views/companies.html',
-        },
-        'companyList@companies': {
-          templateUrl: '../views/company-list.html',
-          controller: 'CompaniesController'
-        },
-        'navBar@companies': {
-          templateUrl: '../views/navbar.html',
-        },
-        'companyView@companies': {
-          templateUrl: '../views/company-individual.html',
-          controller: 'CompanyController'
-        }
-      }    
     })
 
      // nested RESUME view with custom controller
@@ -86,11 +63,11 @@ app.config( function( $stateProvider, $urlRouterProvider ) {
     })
 
     //nested DATES view with custom controller
-
     .state('companies.dates', {
       url: '/dates',
       templateUrl: '../views/dates.html',
-      controller: 'CalendarController'
+      controller: function($scope) {
+        $scope.data = 'these are our dates';
+      }
     });
-    */
 });
