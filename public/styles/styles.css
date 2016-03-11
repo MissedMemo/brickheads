@@ -53,3 +53,97 @@ html {
 /********************************
      Landing Page Elements
 *********************************/
+
+.image-area {
+  background-image: url("../images/splash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 60%; /* offset, for image-specific focal point */
+  height: 90vh; /* combined with menu = 100% screen height */
+}
+
+.left-column {
+  /*background-color: red;*/ /* for layout testing */
+}
+
+.right-column {
+  /*background-color: green;*/ /* for layout testing */
+}
+
+.tagline {
+  color: indigo;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 1.25px;
+  width: 300px; /* req'd, to horiz. center */
+  margin: 60px auto 0 auto;
+}
+
+.tagline .line2 {
+  margin-left: 32px;
+}
+
+.btn {
+  margin: 250px 60px 0 0;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1.25px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.description {
+  color: indigo;
+  margin: 32px auto 0 auto;
+  width: 200px;
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid;
+  border-radius: 6px;
+  padding: 12px;
+}
+
+.description > ul {
+  text-align: left;
+  padding: 0 0 0 20px;
+  margin: 10px 0;
+}
+
+.promo-strip {
+  min-height: 360px;
+  margin-top: 60px;
+  padding: 0 24px;
+}
+
+.promo-block {
+  min-height: 360px;
+  padding: 16px;
+}
+
+.promo-block.visual {
+  background-color: rgba(0,0,255,0.4);
+  color: white;
+  border-radius: 5px;
+}
+
+.promo-block.other {
+  color: indigo;
+}
+
+.video-frame {
+  background-color: black;
+  border-radius: 5px;
+  padding: 12px 6px;
+}
+
+iframe {
+  width: 100%;
+  min-height: 230px;
+}
+
+
+/********************************
+  Individual Company Styles
+*********************************/
