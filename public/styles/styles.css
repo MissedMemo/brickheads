@@ -147,3 +147,13 @@ iframe {
 /********************************
   Individual Company Styles
 *********************************/
+
+.company-selector-panel {
+  width: 200px;
+  background-color: lightgreen;
+}
+
+.company-details-panel {
+  width: 400px;
+  background-color: lightgreen;
+}

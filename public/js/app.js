@@ -9,6 +9,13 @@ app.config( function( $stateProvider, $urlRouterProvider ) {
     .state('home', {
       url: '/home',
       templateUrl: '../views/home.html'
+    })
+
+     // nested COMPANIES view
+    .state('companies', {
+      url: '/companies',
+      templateUrl: '../views/companies.html',
+      controller: 'CompaniesController'
     });
 
     /*

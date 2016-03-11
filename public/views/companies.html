@@ -1,0 +1,26 @@
+
+<div class="row">
+
+  <!-- list of companies -->
+  <div class="col-sm-3">
+    <div class="company-selector-panel">
+      <ul ng-repeat="company in companies">
+        <li>
+          {{company.name}}
+        </li>
+      </ul>
+    </div>
+    <!--div ui-view="companyList"></div-->
+  </div>
+    
+  <!-- selected company details -->
+  <div class="col-sm-9">
+    <div class="company-details-panel">
+    </div>
+    <!--div ui-view="companyView"></div-->
+  </div>
+
+</div> 
+
+
+
