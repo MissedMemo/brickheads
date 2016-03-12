@@ -12,8 +12,8 @@ angular.module('app')
       $scope.currentTask = task;
     };
 
-    // HACK: force click event on #defaultTask DOM element
-    // to init nested view AND $scope.currentTask
+    // HACK: forcing #defaultTask click event
+    // inits nested view AND $scope.currentTask
     
     var privateInit = function () {
       $timeout( function() {
