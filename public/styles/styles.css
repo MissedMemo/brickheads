@@ -165,13 +165,41 @@ iframe {
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 20px;
   background-color: rgba(0,0,0,0.1);
+}
+
+.add-company-frame {
+  color: indigo;
+  margin: 12px;
+  padding: 2px;
+  border: 1px solid rgba(100,100,255,0.4);
+  border-radius: 3px;
+}
+
+.add-company-frame input[type="text"] {
+  width: 80%;
+  float: left;
+  text-align: center;
+  padding:2px;
+  border-width:0;
+}
+
+.add-company-frame button {
+  width: 18%;
+  float: left;
+  padding:2px;
+  margin-left: 2px;
+  border-width:0;
+  border-radius: 3px;
+}
+
+.add-company-frame button:hover {
+  background-color: rgba(100,100,255,0.4);
 }
 
 /* remove default <ul> list styles */
 .company-selector-panel ul {
-  padding: 0;
+  padding: 0 20px 5px 20px;
   margin: 0;
   list-style: none;
 }
@@ -221,6 +249,20 @@ iframe {
   top: -2px;
   padding-top: 2px;
   padding-bottom: 2px;
+}
+
+.company-details-header .glyphicon {
+  font-size: 16px;
+  padding: 6px 6px 4px 4px;
+  color: white;
+  margin-left: 14px;
+  cursor: default;
+  background-color: rgba(100,100,255,0.4);
+  border-radius: 50%;
+}
+
+.company-details-header .glyphicon:hover {
+  background-color: rgba(100,100,255,0.8);
 }
 
 .stages-bar {

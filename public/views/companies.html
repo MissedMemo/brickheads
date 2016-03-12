@@ -6,6 +6,13 @@
     <div class="company-selector-panel">
       <div class="listframe">
 
+        <div class="add-company-frame">
+          <input type="text" placeholder="company name" />
+          <button>Add</button>
+          <!-- Bootstrap utility to clear floats -->
+          <div class="clearfix"></div>
+        </div>
+
         <ul ng-repeat="company in companies">
           <li>
             <div class="list-element" ng-click="select(company)"
