@@ -8,9 +8,8 @@
 
         <div class="add-company-frame">
           <input type="text" ng-model="name" placeholder="company name" />
-          <button ng-click="addCompany(name)">Add</button>
-          <!-- Bootstrap utility to clear floats -->
-          <div class="clearfix"></div>
+          <button ng-click="addCompany(name); name=''">Add</button>
+          <div class="clearfix"></div><!-- clears floats -->
         </div>
 
         <ul ng-repeat="company in companies">
