@@ -83,7 +83,7 @@ html {
   margin-left: 32px;
 }
 
-.btn {
+.image-area .btn {
   margin: 250px 60px 0 0;
   float: right;
   font-size: 20px;
@@ -182,7 +182,7 @@ iframe {
 
 .list-element {
   display: block;
-  background-color: rgba(0,0,255,0.25);
+  background-color: rgba(100,100,255,0.2);
   color: rgba(0,0,255,0.65);
   text-align: center;
   padding: 5px 0;
@@ -191,7 +191,12 @@ iframe {
 }
 
 /* highlight list element on mouse-over or click */
-.list-element:hover, .list-element:focus {
+.list-element:hover {
+  background-color: rgba(0,0,255,0.4);
+  color: white;
+  text-decoration: none;
+}
+.list-element:focus {
   background-color: rgba(0,0,255,0.6);
   color: white;
   text-decoration: none;
@@ -208,8 +213,16 @@ iframe {
 }
 
 .company-details-header .company-name {
-  margin: 0 8px;
+  margin-right: 14px;
+  text-transform: uppercase;
   font-weight: bold;
+}
+
+.company-details-header .btn {
+  position: relative;
+  top: -2px;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 .stages-bar {
