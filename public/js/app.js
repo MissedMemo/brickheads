@@ -26,38 +26,25 @@ app.config( function( $stateProvider, $urlRouterProvider ) {
       }   
     })
 
-     // nested RESUME view with custom controller
+     // nested TASK views...
+
     .state('companies.resume', {
-      url: '/resume',
-      templateUrl: '../views/resume.html',
-      controller: 'TasksController'
+      templateUrl: '../views/resume.html'
     })
 
-     // nested COVER LETTER view with custom controller
     .state('companies.cover-letter', {
-      url: '/cover-letter',
-      templateUrl: '../views/cover-letter.html',
-      controller: 'TasksController'
+      templateUrl: '../views/cover-letter.html'
     })
 
-     // nested RESEARCH view with custom controller
     .state('companies.research', {
-      url: '/research',
-      templateUrl: '../views/research.html',
-      controller: 'TasksController'
+      templateUrl: '../views/research.html'
     })
 
-     // nested CONTACTS view with custom controller
     .state('companies.contacts', {
-      url: '/contacts',
-      templateUrl: '../views/contacts.html',
-      controller: 'TasksController'
+      templateUrl: '../views/contacts.html'
     })
 
-    //nested DATES view with custom controller
     .state('companies.dates', {
-      url: '/dates',
-      templateUrl: '../views/dates.html',
-      controller: 'TasksController'
+      templateUrl: '../views/dates.html'
     });
 });
