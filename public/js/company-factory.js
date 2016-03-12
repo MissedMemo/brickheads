@@ -6,7 +6,8 @@ angular.module('app')
           name: 'company X'
         },
         {
-          name: 'company Y'
+          name: 'company Y',
+          applied: true
         },
         {
           name: 'company Z'
@@ -19,6 +20,15 @@ angular.module('app')
 
     var add = function(name) {
       demoData.push( { name: name } );   
+    };
+
+    var apply = function(id) {
+      // temp hack...
+      for ( var i = 0; i < demoData.length; i++ ) {
+        if ( demoData[i].name === id ) {
+          demoData[i].applied = true;
+        }
+      } 
     };
     
 

@@ -218,6 +218,11 @@ iframe {
   cursor: default;
 }
 
+.list-element .glyphicon {
+  color: green;
+  margin-right: 4px;
+}
+
 .list-element:hover {
   background-color: rgba(0,0,255,0.4);
   color: white;
