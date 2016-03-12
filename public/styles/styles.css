@@ -190,16 +190,14 @@ iframe {
   cursor: default;
 }
 
-/* highlight list element on mouse-over or click */
 .list-element:hover {
   background-color: rgba(0,0,255,0.4);
   color: white;
-  text-decoration: none;
 }
-.list-element:focus {
+
+.list-element[selected] {
   background-color: rgba(0,0,255,0.6);
   color: white;
-  text-decoration: none;
 }
 
 

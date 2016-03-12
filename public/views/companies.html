@@ -8,8 +8,8 @@
 
         <ul ng-repeat="company in companies">
           <li>
-            <!-- tabindex hack enables list element selection -->
-            <div class="list-element" ng-click="select(company)" tabindex="-1">
+            <div class="list-element" ng-click="select(company)"
+                 ng-selected="selection.name === company.name">
               {{company.name}}
             </div>
           </li>
@@ -25,6 +25,3 @@
   </div>
 
 </div> 
-
-
-
