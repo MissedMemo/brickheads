@@ -7,8 +7,8 @@
       <div class="listframe">
 
         <div class="add-company-frame">
-          <input type="text" placeholder="company name" />
-          <button>Add</button>
+          <input type="text" ng-model="name" placeholder="company name" />
+          <button ng-click="addCompany(name)">Add</button>
           <!-- Bootstrap utility to clear floats -->
           <div class="clearfix"></div>
         </div>

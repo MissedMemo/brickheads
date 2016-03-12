@@ -1,23 +1,30 @@
 angular.module('app')
   .factory( 'CompanyFactory', ['$http', function($http) {
 
-    var getAll = function() {
-      return [
+    var demoData = [
         {
-          name: 'company A'
+          name: 'company X'
         },
         {
-          name: 'company B'
+          name: 'company Y'
         },
         {
-          name: 'company C'
+          name: 'company Z'
         }
-      ];   
+    ];
+
+    var getAll = function() {
+      return demoData;
+    };
+
+    var add = function(name) {
+      demoData.push( { name: name } );   
     };
     
 
     return {
-      getAll: getAll
+      getAll: getAll,
+      add: add
     };
 
   }]);

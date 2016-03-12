@@ -8,6 +8,13 @@ angular.module('app')
       $scope.selection = company;
     };
 
+    $scope.addCompany = function(name) {
+      CompanyFactory.add(name);
+      // after promise...
+      $scope.companies = CompanyFactory.getAll();
+      $scope.selection = $scope.companies[ $scope.companies.length - 1 ];
+    };
+
     // HACK: forcing #defaultTask click event
     // inits nested view AND $scope.currentTask
     
@@ -18,7 +25,6 @@ angular.module('app')
       }, 100);
     };
 
-    privateInit();
-    
+    privateInit();  
 
   }]);
