@@ -30,44 +30,34 @@ app.config( function( $stateProvider, $urlRouterProvider ) {
     .state('companies.resume', {
       url: '/resume',
       templateUrl: '../views/resume.html',
-      controller: function($scope) {
-        $scope.data = 'resume';
-      }
+      controller: 'TasksController'
     })
 
      // nested COVER LETTER view with custom controller
     .state('companies.cover-letter', {
       url: '/cover-letter',
       templateUrl: '../views/cover-letter.html',
-      controller: function($scope) {
-        $scope.data = 'this is our cover letter';
-      }
+      controller: 'TasksController'
     })
 
      // nested RESEARCH view with custom controller
     .state('companies.research', {
       url: '/research',
       templateUrl: '../views/research.html',
-      controller: function($scope) {
-        $scope.data = 'this is our research';
-      }
+      controller: 'TasksController'
     })
 
      // nested CONTACTS view with custom controller
     .state('companies.contacts', {
       url: '/contacts',
       templateUrl: '../views/contacts.html',
-      controller: function($scope) {
-        $scope.data = 'these are our contacts';
-      }
+      controller: 'TasksController'
     })
 
     //nested DATES view with custom controller
     .state('companies.dates', {
       url: '/dates',
       templateUrl: '../views/dates.html',
-      controller: function($scope) {
-        $scope.data = 'these are our dates';
-      }
+      controller: 'TasksController'
     });
 });
