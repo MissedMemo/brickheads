@@ -8,10 +8,6 @@ angular.module('app')
       $scope.selection = company;
     };
 
-    $scope.setTask = function( task ) {
-      $scope.currentTask = task;
-    };
-
     // HACK: forcing #defaultTask click event
     // inits nested view AND $scope.currentTask
     

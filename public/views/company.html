@@ -12,12 +12,17 @@
 
 <section class="taskpanel">
 
-  <div class="taskbar"
-       ng-init="tasks = ['resume','cover-letter','research','contacts', 'dates']">
+  <div class="taskbar" ng-init="tasks = [
+         'resume',
+         'cover-letter',
+         'research',
+         'contacts',
+         'dates'
+       ]">
 
   	<a ui-sref=".resume" class="buttonframe"
   	   ng-selected="currentTask === tasks[0]"
-  	   ng-click="setTask(tasks[0])">
+  	   ng-click="currentTask = tasks[0]">
 	  <div class="taskbutton">
 	    <i class="fa fa-file-o"></i>
 	    <div class="caption">{{tasks[0]}}</div>
@@ -26,7 +31,7 @@
 
 	<a ui-sref=".cover-letter" class="buttonframe"
   	   ng-selected="currentTask === tasks[1]"
-  	   ng-click="setTask(tasks[1])">
+  	   ng-click="currentTask = tasks[1]">
 	  <div class="taskbutton">
 	    <i class="fa fa-file-text-o"></i>
 	    <div class="caption">{{tasks[1]}}</div>
@@ -36,7 +41,7 @@
 	<a id="defaultTask"
 	   ui-sref=".research" class="buttonframe"
   	   ng-selected="currentTask === tasks[2]"
-  	   ng-click="setTask(tasks[2])">
+  	   ng-click="currentTask = tasks[2]">
 	  <div class="taskbutton">
 	    <i class="fa fa-book"></i>
 	    <div class="caption">{{tasks[2]}}</div>
@@ -45,7 +50,7 @@
 
 	<a ui-sref=".contacts" class="buttonframe"
   	   ng-selected="currentTask === tasks[3]"
-  	   ng-click="setTask(tasks[3])">
+  	   ng-click="currentTask = tasks[3]">
   	   <div class="taskbutton">
 	    <i class="fa fa-user-plus"></i>
 	    <div class="caption">{{tasks[3]}}</div>
@@ -54,7 +59,7 @@
 
 	<a ui-sref=".dates" class="buttonframe"
   	   ng-selected="currentTask === tasks[4]"
-  	   ng-click="setTask(tasks[4])">
+  	   ng-click="currentTask = tasks[4]">
   	   <div class="taskbutton">
 		<i class="fa fa-calendar-o"></i>
 	    <div class="caption">{{tasks[4]}}</div>
